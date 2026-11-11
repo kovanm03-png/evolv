@@ -1,0 +1,38 @@
+# made on the fly for Cloudflare (node scripts/publish.js)
+public/
+node_modules/
+.wrangler/
+
+# local tools and test output
+.claude/
+.taste-skill/
+shots/
+
+# the old one-page generator (the current one is preview/build.js)
+/build.js
+/share.png
+
+# previews and backups made by preview/build.js
+preview/site/
+preview/backup-last/
+preview/original/
+
+# the design kit from the first one-page version: not used by the live site
+assets/backgrounds/
+assets/components/
+assets/diagrams/
+assets/effects/
+assets/layout/
+assets/moments/
+assets/motion/
+assets/objects/
+assets/photos/
+assets/scenes/
+assets/ui/
+assets/starter.html
+assets/system.css
+assets/system.js
+
+# only the Instagram mark is used (the rest of the icon folder is design-kit demo files)
+assets/icons/*
+!assets/icons/instagram.svg

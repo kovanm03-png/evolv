@@ -1,0 +1,50 @@
+/* round 3: real posts and graphics, pictures that link to Instagram, "what we do" on the home page. */
+
+a.shot { cursor: pointer; }
+.step__img { display: block; }
+.step__img:hover { border-color: var(--p-accent); }
+
+/* what Evolve 360 does: three posts from the feed */
+.do-grid { display: grid; gap: 22px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); }
+.postcard { display: grid; gap: 14px; align-content: start; }
+.postcard .shot { aspect-ratio: 4 / 5; }
+.postcard small { color: var(--accent-text); font-weight: 600; font-size: .85rem; }
+.postcard h3 { font-size: 1.35rem; }
+.postcard p { color: var(--p-muted); }
+.do-intro { max-width: 70ch; color: var(--p-muted); font-size: 1.08rem; margin-top: 12px; }
+
+/* goals now carry a picture */
+.goal { grid-template-columns: 1fr minmax(130px, 36%); align-items: end; gap: 22px; }
+.goal__txt { display: grid; gap: 12px; position: relative; align-self: end; }
+.goal__pic .shot { aspect-ratio: 3 / 4; }
+.goal__meta { font-size: .9rem; color: var(--accent-text); font-weight: 600; }
+@media (max-width: 560px) { .goal { grid-template-columns: 1fr; } .goal__pic { max-width: 220px; } }
+
+/* the picture wall is made of links now */
+.wall__track a { display: block; flex: none; border-radius: 18px; }
+.wall__track a:hover img { border-color: var(--p-accent); }
+.wall__track a img { transition: border-color .3s; }
+
+/* topic and about cards with a picture */
+.card--pic { padding: 0; overflow: hidden; }
+.card--pic .shot { border-radius: 0; border: 0; border-bottom: 1px solid var(--line); aspect-ratio: 4 / 3; box-shadow: none; }
+.card--pic .shot:hover { transform: none; box-shadow: none; }
+.card--pic .card__body { padding: 24px 28px 28px; display: grid; gap: 12px; }
+.card--pic .card__body p { color: var(--p-muted); }
+
+/* who is behind it */
+.who { display: grid; gap: 28px; grid-template-columns: 1fr; align-items: center; padding: clamp(24px, 4vw, 44px); border-radius: 28px; background: var(--card); border: 1px solid var(--line); }
+@media (min-width: 820px) { .who { grid-template-columns: 1.3fr 1fr; } }
+.who h2 { font-size: clamp(1.6rem, 3vw, 2.4rem); }
+.who p { color: var(--p-muted); margin-top: 12px; max-width: 54ch; }
+.who__pics { display: grid; gap: 12px; grid-template-columns: repeat(3, 1fr); }
+.who__pics .shot { aspect-ratio: 3 / 4; }
+
+/* contact picture */
+.contact-pic { max-width: 360px; }
+.contact-pic .shot { aspect-ratio: 4 / 5; }
+.beauty-tile { display: grid; place-items: center; gap: 12px; text-align: center; padding: 36px 24px; }
+.beauty-tile .svc__icon { margin: 0; width: 84px; height: 84px; border-radius: 50%; }
+.beauty-tile .svc__icon svg { width: 40px; height: 40px; }
+
+.step__img.shot { aspect-ratio: 4 / 5; }

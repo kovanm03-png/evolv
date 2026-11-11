@@ -1,0 +1,9 @@
+{
+  "name": "evolve-360",
+  "private": true,
+  "description": "Evolve 360 website (English and Kurdish). Static pages, no dependencies.",
+  "scripts": {
+    "build": "node scripts/publish.js",
+    "deploy": "node scripts/publish.js && wrangler deploy"
+  }
+}

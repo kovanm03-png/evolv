@@ -1,0 +1,10 @@
+{
+  // Cloudflare Workers with static assets: publishes the "public" folder (made by: node scripts/publish.js).
+  // The Worker's name in the Cloudflare dashboard must be exactly this name.
+  "name": "evolve-360",
+  "compatibility_date": "2026-11-12",
+  "assets": {
+    "directory": "./public",
+    "not_found_handling": "404-page"
+  }
+}
